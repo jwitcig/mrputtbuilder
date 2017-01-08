@@ -18,6 +18,18 @@ def fly(request):
     call(['ls'])
 
 
-    call(['fastlane', 'ios', 'fly'], cwd='/app/operation-mr-putt-putt')
+    project = grandparent_dir = os.path.abspath(  # Convert into absolute path string
+        os.path.join(  # Current file's grandparent directory
+            os.path.join(  # Current file's parent directory
+                os.path.dirname(  # Current file's directory
+                    os.path.abspath(__file__)  # Current file path
+                ),
+                os.pardir
+            ),
+            os.pardir
+        )
+    )
+
+    call(['fastlane', 'ios', 'fly'], cwd=project)
 
     return HttpResponse()
