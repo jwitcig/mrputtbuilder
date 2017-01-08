@@ -18,6 +18,6 @@ def fly(request):
     call(['ls'])
 
 
-    call(['fastlane', 'ios', 'fly'], cwd=os.path.realpath(__file__)+'/../operation-mr-putt-putt')
+    call(['fastlane', 'ios', 'fly'], cwd='/app/operation-mr-putt-putt')
 
     return HttpResponse()
