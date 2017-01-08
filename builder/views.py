@@ -9,7 +9,7 @@ from subprocess import call
 def fly(request):
     call(['rm', '-rf', 'durputtbuilder/operation-mr-putt-putt'])
 
-
+    call(['ls'])
 
     call(['git', 'clone', '-b', 'dev', 'https://github.com/jwitcig/operation-mr-putt-putt'])
 
