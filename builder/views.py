@@ -9,8 +9,8 @@ from subprocess import call
 def fly(request):
     call(['git', 'clone', '-b', 'dev', 'https://github.com/jwitcig/operation-mr-putt-putt'])
 
-    subprocess.Popen(['fastlane', 'ios', 'fly'], cwd='operation-mr-putt-putt')
+    subprocess.Popen(['fastlane', 'ios', 'fly'], cwd='durputtbuilder/operation-mr-putt-putt')
 
-    call(['rm', '-rf', 'operation-mr-putt-putt'])
+    call(['rm', '-rf', 'durputtbuilder/operation-mr-putt-putt'])
 
     return HttpResponse()
