@@ -31,6 +31,6 @@ def fly(request):
     )
     print project
 
-    call(['fastlane', 'ios', 'fly'], cwd=project)
+    call(['fastlane', 'ios', 'fly'], cwd=project+'operation-mr-putt-putt')
 
     return HttpResponse()
