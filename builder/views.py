@@ -29,6 +29,7 @@ def fly(request):
             os.pardir
         )
     )
+    print project
 
     call(['fastlane', 'ios', 'fly'], cwd=project)
 
