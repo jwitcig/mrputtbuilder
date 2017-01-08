@@ -25,7 +25,9 @@ SECRET_KEY = '7x&fyl+co+w6n7-h-oi676^ht%@%kl+y@r*=5nl%7h(kujci3t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'drputtbuilder.herokuapp.com'
+]
 
 
 # Application definition
